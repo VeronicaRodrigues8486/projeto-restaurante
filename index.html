@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Completo Responsivo de um Restaurente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Food<span>.</span></a>
+        <div class="maneuToggle" onclick="toggleMenu();";></div>
+        <ul class="navegacao">
+            <li><a href ="#banner" onclick="toggleMenu()";>Home</a></li>
+            <li><a href ="#sobre" onclick="toggleMenu()";>Sobre</a></li>
+            <li><a href ="#menu" onclick="toggleMenu()";>Menu</a></li>
+            <li><a href ="#comentarios" onclick="toggleMenu()";>Testemunho</a></li>
+            <li><a href ="#contato" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="conteudo">
+            <h2>Escolha sempre o melhor</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">Nosso cadápio</a>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="alinhar">
+            <div class="sobre-nos">
+                <h2 class="titulo-texto"><span>S</span>obre nós</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolor dolorum quidem esse sed non. Perferendis sit fuga eaque dignissimos animi velit, dolor quos vitae aperiam qui, ducimus suscipit sint?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi tempore nihil iure, dolorum quia non. Vel, quis expedita delectus illo porro impedit iure, eius similique soluta quibusdam nam laboriosam perferendis.</p>
+            </div>
+            <div class="sobre-nos">
+                <div class="imgBg2">
+                    <img src="images/foto002.jpg" alt="imagem de um prato com fatias de pao e tomate">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="titulo">
+            <h2 class="titulo-texto"><span>M</span>enu</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti inventore, blanditiis et nostrum porro, numquam ratione ea distinctio culpa, veritatis explicabo voluptatum vitae alias fugit earum quae mollitia voluptatem voluptates.</p>
+        </div>
+        <div class="conteudo">
+            <div class="refeicao">
+                <div class="prato">
+                    <img src="images/salada-de-tomates-e-queijo.jpg" alt="prato de salada de tomate, queijo e queijo">
+                </div>
+                <div class="texto">
+                    <h3>Salada Especial de tomate, queijo e azeitona</h3>
+                </div>
+            </div>
+            <div class="refeicao">
+                <div class="prato">
+                    <img src="images/sopa-de-cebola-gratinada.jpg" alt="sopa de cebola gratinada">
+                </div>
+                <div class="texto">
+                    <h3>Sopa Especial de cebola gratinada</h3>
+                </div>
+            </div>
+            <div class="refeicao">
+                <div class="prato">
+                    <img src="images/salada-de-espinafre-com-hortela.jpg" alt="salada de salada-de-espinafre-com-hortela">
+                </div>
+                <div class="texto">
+                    <h3>Salada Especial de espinafre com hortela</h3>
+                </div>
+            </div>
+            <div class="refeicao">
+                <div class="prato">
+                    <img src="images/sopa-de-ministrone.jpg" alt="sopa de vegatais com macarrão">
+                </div>
+                <div class="texto">
+                    <h3>Sopa Especial de vegetais e macarrrão</h3>
+                </div>
+            </div>
+            <div class="refeicao">
+                <div class="prato">
+                    <img src="images/nhoque.jpg" alt="nhoque de batata">
+                </div>
+                <div class="texto">
+                    <h3>Delicioso Nhoque de batata com molho</h3>
+                </div>
+            </div>
+            <div class="refeicao">
+                <div class="prato">
+                    <img src="images/espaguete-de-almondegas.jpg" alt="espaguete com almondegas">
+                </div>
+                <div class="texto">
+                    <h3>Delicioso Espaguete com almôndegas</h3>
+                </div>
+            </div>
+        </div>
+        <div class="titulo">
+            <a href="#" class="btn">Visualizar</a>
+
+            <div></div>
+        </div>
+    </section>
+
+    <section class="especialista" id="especialista">
+        <div class="titulo">
+            <h2 class="titulo-texto">Nossos <span>E</span>specialistas na cozinha</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti inventore, blanditiis et nostrum porro, numquam ratione ea distinctio culpa, veritatis explicabo voluptatum vitae alias fugit earum quae mollitia voluptatem voluptates.</p>
+        </div>
+        <div class="conteudo">
+            <div class="conteudo-chefe">
+                <div class="chefe-img">
+                    <img src="images/chefe01.jpg">
+                </div>
+                <div class="text">
+                    <h3>Alguem famoso</h3>
+                </div>
+            </div>
+            <div class="conteudo-chefe">
+                <div class="chefe-img">
+                    <img src="images/chefe02.jpg">
+                </div>
+                <div class="text">
+                    <h3>Alguem famoso</h3>
+                </div>
+            </div>
+            <div class="conteudo-chefe">
+                <div class="chefe-img">
+                    <img src="images/chefe03.jpg">
+                </div>
+                <div class="text">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comentarios" id="comentarios">
+        <div class="titulo-branco">
+            <h2 class="titulo-texto">Eles disseram sobre <span>N</span>ós</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde veniam debitis dolorum illum, ullam assumenda velit hic ut excepturi a corrupti magni perferendis deleniti libero delectus fuga expedita, aliquid eius.</p>
+        </div>
+        <div class="conteudo">
+            <div class="comentario">
+                <div classe="img-comentario">
+                    <img src="images/comentario-foto01.jpg" alt="foto de mulher morena">
+                </div>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est minus praesentium expedita ratione vitae, in reprehenderit nam vel quos officia architecto animi, tempora accusamus, autem dolore blanditiis eligendi voluptate quisquam!</p>
+                    <h3>Alguém famoso</h3>
+                </div>
+            </div>
+            <div class="comentario">
+                <div classe="img-comentario">
+                    <img src="images/foto-comentario-02.jpg" alt="foto de atriz famosa">
+                </div>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est minus praesentium expedita ratione vitae, in reprehenderit nam vel quos officia architecto animi, tempora accusamus, autem dolore blanditiis eligendi voluptate quisquam!</p>
+                    <h3>Alguém famoso</h3>
+                </div>
+            </div>
+            <div class="comentario">
+                <div classe="img-comentario">
+                    <img src="images/foto-comentario03.jpg" alt="foto de ator famoso Denzel whashitong">
+                </div>
+                <div class="texto">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est minus praesentium expedita ratione vitae, in reprehenderit nam vel quos officia architecto animi, tempora accusamus, autem dolore blanditiis eligendi voluptate quisquam!</p>
+                    <h3>Alguém famoso</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="titulo">
+            <h2 class="titulo-texto"><span>C</span>ontato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rem possimus laboriosam consectetur quia debitis quibusdam, at, iste dolore autem ea pariatur nisi cum quis provident voluptatibus. Perspiciatis, incidunt commodi?</p>
+        </div>
+        <div class="contato-formato">
+            <h3>Enviar menssagem</h3>
+            <div class="caixa-de-entrada">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="caixa-de-entrada">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="caixa-de-entrada">
+                <textarea placeholder="Name"></textarea>
+            </div>
+            <div class="caixa-de-entrada">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </section>
+
+    <div class="copyrightText">
+        <p>Copyright 2020 <a href="">"Online Tutorials"</a>Todos os direitos reservados</p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navegacao = document.querySelector('.navegacao');
+            menuToggle.classList.toggle('active');
+            navegacao.classList.toggle('active');
+        }
+
+    </script>
+       
+
+</body>
+</html>

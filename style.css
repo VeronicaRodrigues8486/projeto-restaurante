@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 100;
+    color: #111;
+}
+
+body{
+    min-height: 1000px;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: url(images/primeira-foto.jpg) no-repeat;
+    background-size: cover;
+}
+
+.banner .conteudo{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .conteudo h2{
+    font-size: 4em;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+.banner .conteudo p{
+    font-size: 2em;
+    color: #111;
+}
+
+.btn{
+    font-size: 1em;
+    color: rgb(214, 208, 208);
+    background:  rgba(235, 11, 11, 0.925);
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 18px;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: rgba(14, 13, 13, 0.137);
+    padding: 10px 100px;
+    box-shadow:0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .logo{
+    color:#fff;
+}
+
+header.sticky .navegacao li a{
+    color: rgba(17, 17, 17, 0.199);
+}
+
+header .logo{
+    color:rgba(235, 11, 11, 0.92);
+    font-weight: 500;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header .logo span{
+    color: #111;
+}
+
+header .navegacao{
+    position: relative;
+    display: flex;
+}
+
+header .navegacao li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navegacao li a{
+    text-decoration: none;
+    color: #111;
+    font-weight: 500px;
+    font-size: 1.2em;
+}
+
+header .navegacao li a:hover{
+    color: rgba(235, 11, 11, 0.925);
+}
+
+section{
+    padding: 100px;
+}
+
+.alinhar{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.alinhar .sobre-nos .imgBg2{
+    position: relative;
+    width: 100%; 
+    min-height: 300px;
+    height: 100%;
+}    
+
+.alinhar .sobre-nos .imgBg2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.alinhar .sobre-nos{
+    position: relative;
+    width: 48%;
+}
+
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-texto{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titulo-texto span{
+    color:rgba(235, 11, 11, 0.925);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.menu .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .conteudo .refeicao{
+    width: 340px;
+    margin: 20px;
+    padding: 10px;
+    border: 10px solid #111;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.menu .conteudo .refeicao .prato{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .conteudo .refeicao .prato img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .conteudo .refeicao .texto{
+    padding: 15px 0 5px;
+}
+
+.menu .conteudo .refeicao .texto h3{
+    font-weight: 400;
+    color: #111;  
+}
+
+.especialista .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.especialista .conteudo .conteudo-chefe{
+    width: 250px;
+    margin: 15px;
+}
+
+.especialista .conteudo .conteudo-chefe .chefe-img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.especialista .conteudo .conteudo-chefe img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.especialista .conteudo .conteudo-chefe .texto{
+    padding: 15px 0 5px;
+}
+
+.especialista .conteudo .conteudo-chefe .texto h3{
+    font-weight: 400;
+    color: #111;
+}
+
+.comentarios {
+    background-image: url(images/foto-comentarios.jpg);
+    background-size: cover;
+}
+
+.titulo-branco .titulo-texto,
+.titulo-branco p{
+    color: #111;
+}
+
+.comentarios .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.comentarios .conteudo .comentario{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comentarios .conteudo .comentario .img-comentario{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comentarios .conteudo .comentario .img-comentario img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comentarios .conteudo .comentario .texto{
+    text-align: center;
+}
+
+.comentarios .conteudo .comentario .texto p{
+    color: #666;
+    font-style: italic;
+}
+
+.comentarios .conteudo .comentario .texto h3{    
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: rgba(235, 11, 11, 0.925);
+    font-weight: 600;
+}
+
+.contato{
+    background: url(images/ultima-foto.jpg);
+    background-size: cover;
+}
+
+.contato-formato{ 
+    padding: 75px 50px;
+    background: #111;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contato-formato h3{
+    color:#111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contato-formato .caixa-de-entrada{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contato-formato .caixa-de-entrada input,
+.contato-formato .caixa-de-entrada input textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contato-formato .caixa-de-entrada input[type="submit"]{
+    font-size: 1em;
+    color: #111;
+    background: rgba(235, 11, 11, 0.925);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.copyrightText p{
+    color: #333;
+}
+
+.copyrightText a{
+    color: rgba(235, 11, 11, 0.925);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 991px)
+{
+
+    .banner .conteudo h2{
+        font-size: 3em;
+        color: #111;
+    }
+
+    .alinhar {
+        flex-direction: column;
+    }
+    
+    .alinhar .sobre-nos{
+        position: relative;
+        width: 100%;
+    }
+
+    .alinhar .sobre-nos imgBg2{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    header, 
+    header.sticky{
+       padding: 10px 20px;
+    } 
+    header .navegacao{
+       display: none;
+    }
+
+    header .navegacao li{
+        margin-left: 0;
+    }
+
+    header .navegacao li a{
+       text-decoration: none;
+       color: #111;
+       font-size: 1.6em;
+       font-weight: 300;
+    }
+
+    header .navegacao .active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #111;
+    }
+
+    header .stick .menuToggle{
+        filter: invert(1);
+    }
+
+   .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/basil-gc6c49587d_640.jpg);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor:pointer;
+    }
+   .menuToggle.active{
+        background: url(images/foto-01.jpg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .menu .conteudo{
+        margin-top: 20px;
+    }
+
+    .menu .conteudo .refeição{
+        margin: 10px
+    }
+
+    .menu .conteudo .refeicao prato{
+        height: 260px;
+    }
+
+    .titulo{
+       text-align: center; 
+    }
+
+    .titulo-texto{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .comentarios .conteudo .comentario{
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contato-formato{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    section{
+        padding: 20px;
+    }
+
+@media (max-width: 480px)
+    {
+
+    .banner .conteudo h2{
+        font-size: 2.2em;
+        color: #111;
+    }
+    }
+   
+}
+    
